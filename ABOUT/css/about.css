@@ -1,59 +1,63 @@
-img {
+.about img {
 	border: 0;
 }
-ul {
+.about ul {
 	list-style: none;
 }
 .clearfix:after {
-	visibility: hidden;
 	display: block;
-	font-size: 0;
 	content: " ";
 	clear: both;
-	height: 0;
 }
 
-.clearfix {
+.about .clearfix {
 	zoom: 1;
 }
 body {
 	font-family: "microsoft yahei";
+	margin: 0;
+	padding: 0;
 }
-.container {
-	margin: 50px auto;
-	margin-bottom: 100px;
-	max-width: 1000px;
+.about .container {
+	padding: 50px 0;
+	min-width: 1000px;
+	height: 600px;
+	background: url(../img/1.jpg) center center no-repeat;
+	background-size: cover;
 }
-h1 {
+.about h1 {
 	margin-bottom: 30px;
 	text-align: center;
 	font-size: 30px;
 }
 /*旋转木马必要样式*/
 
-.poster-main {
+.about .poster-main {
 	position: relative;
 	width: 800px;
 	height: 270px;
+	margin-bottom: 50px;
+	margin: 50px auto;
 }
 
-.poster-main a,
-.poster-main img {
+.about .poster-main a,
+.about .poster-main img {
 	display: block;
+	box-shadow: 0 0 8px 2px rgba(0,0,0,.3);
 }
 
-.poster-main .poster-list {
+.about .poster-main .poster-list {
 	width: 800px;
 	height: 270px;
 }
 
-.poster-main .poster-list .poster-item {
+.about .poster-main .poster-list .poster-item {
 	position: absolute;
 	left: 0;
 	top: 0;
 }
 
-.poster-main .poster-btn {
+.about .poster-main .poster-btn {
 	position: absolute;
 	top: 0;
 	width: 100px;
@@ -63,31 +67,32 @@ h1 {
 	opacity: 0.8
 }
 
-.poster-main .poster-prev-btn {
+.about .poster-main .poster-prev-btn {
 	left: 0;
 	background: url(btn_l.png) no-repeat center center;
 }
 
-.poster-main .poster-next-btn {
+.about .poster-main .poster-next-btn {
 	right: 0;
 	background: url(btn_r.png) no-repeat center center;
 }
 /*下面内容部分*/
-.bottom{
+.about .bottom{
 	max-width: 800px;
 	height: 300px;
 	margin: auto;
-	padding-left: 100px;
 }
-.bottom .new li a{
-	text-decoration: none;
-	color: black;
-	font-family: "宋体";
+.about .bottom h2{
+	margin: auto;
+	text-align: center;
+	color: white;
+	text-shadow: 2px 2px 4px rgba(0,0,0,1);
+	margin-bottom: 20px;
+}
+.about .bottom p{
+	margin: 0;
+	text-indent: 2em;
+	color: white;
+	text-shadow: 2px 2px 4px rgba(0,0,0,1);
 	line-height: 2;
-}
-.bottom .new li a:hover{
-	color: #a99359;
-}
-.bottom .new li{
-	list-style: circle;
 }
